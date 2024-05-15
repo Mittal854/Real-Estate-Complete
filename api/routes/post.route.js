@@ -1,9 +1,10 @@
-import express from 'express';
+import express from "express";
 
-const router=express.Router();
+const router = express.Router();
 
-router.get("/test",(req,res)=>{
-    console.log("router works!")
-})
+router.get("/test", (req, res) => {
+  console.log("router works!");
+  res.send("Router works!"); // send a response
+});
 
 export default router;
