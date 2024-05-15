@@ -1,15 +1,11 @@
-// index.js or whatever your main file is called
-import express from "express";
+import express from 'express';
 import postRoute from "./routes/post.route.js";
 import authRoute from "./routes/auth.route.js";
-
 const app = express();
+
 app.use(express.json());
-
-// Correct the route path to include a leading slash
-app.use("/api/posts", postRoute);
-app.use("/api/auth", authRoute);
-
-app.listen(8900, () => {
-  console.log("Server is running");
+app.use("/api/posts",postRoute);
+app.use("/api/auth",authRoute);
+app.listen(8800,()=>{
+    console.log('server started')
 });
