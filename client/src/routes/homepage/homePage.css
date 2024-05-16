@@ -1,0 +1,105 @@
+/* Media Query Mixins */
+@media (max-width: 738px) {
+    /* @mixin sm */
+    .homePage .textcontainer .wrapper {
+        padding: 0;
+    }
+    .homePage .textcontainer .wrapper .boxes {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* @mixin md */
+    .homePage .imgcontainer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    /* @mixin lg */
+    .homePage .textcontainer .wrapper .title {
+        font-size: 48px;
+    }
+    .homePage .textcontainer .wrapper .boxes h1 {
+        font-size: 48px;
+    }
+    .homePage .imgcontainer img {
+        width: 115%;
+    }
+}
+
+/* Main CSS */
+/* .homepageMain{ */
+    /* height:calc(100vh - 100px); */
+    /* overflow-y:auto; */
+    /* width: calc(100%-80px); */
+/* } */
+.homePage {
+    background-image: url("https://assets.wander.com/312296435703873538/1200.webp");
+    border-radius: 20px;
+    width: 109%;
+    height: 580px;
+    /* background-repeat: no-repeat; */
+    background-size:100% 100%;
+    text-align: center;
+    margin-left: -60px;
+    color: white;
+    padding: 20px;
+}
+
+.homePage .textcontainer {
+    flex: 3;
+}
+
+.homePage .textcontainer .wrapper {
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.homePage .textcontainer .wrapper .title {
+    font-size: 70px;
+}
+
+.homePage .textcontainer .wrapper p{
+    font-size: 22px;
+    color:white;
+    margin-top: 160px;
+}
+
+.homePage .textcontainer .wrapper .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homePage .textcontainer .wrapper .boxes h1 {
+    font-size: 32px;
+}
+
+.homePage .textcontainer .wrapper .boxes h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.homePage .imgcontainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.homePage .imgcontainer img {
+    width: 115%;
+    position: absolute;
+    right: 0;
+}
+
+

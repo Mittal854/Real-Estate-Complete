@@ -1,0 +1,52 @@
+.heading1 {
+    margin-top: 50px;
+    display: block;
+}
+
+.heading1 .h1 {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+
+.heading1 .p1 {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.container {
+    left: 0;
+    align-content: center;
+    margin-top: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.listing {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+}
+
+.listing img {
+    width: 400px;
+    height: 200px;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details h2 {
+    margin-top: 20;
+}
+
+.details p {
+    margin: 5px 0;
+}
