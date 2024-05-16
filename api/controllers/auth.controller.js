@@ -21,8 +21,24 @@ export const register = async (req,res)=>{
         res.status(500).json({message:"Failed to create user"})
     }
 }
-export const login =(req,res)=>{
-    //db
+export const login = async(req,res)=>{
+    const {username, password} = req.body;
+    try{
+    // Check is the user exists, if not throw an error
+    const user = await prisma.user.findUnique({
+        where: {username}
+    })
+
+    if(!user) 
+        return res.status(401).json({message: "Invalid Credentials!"})
+
+    // Check if the password is correct
+
+    // Generate cookie token and send it to the user
+    } catch(err) {
+        console.log(first);
+        res.status(500).json({message: "Failes to login!"})
+    }
 }
 export const logout =(req,res)=>{
     //db
