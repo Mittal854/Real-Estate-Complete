@@ -5,6 +5,8 @@ import { Layout, RequireAuth } from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/singlePage";
 import ProfilePage from "./routes/profilePage/profilePage";
 import Login from "./routes/login/login";
+import AboutPage from "./routes/AboutPage/AboutPage";
+import ContactPage from "./routes/ContactPage/ContactPage";
 import Register from "./routes/register/register";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
@@ -36,6 +38,14 @@ function App() {
           element: <Login />,
         },
         {
+          path: "/about",
+          element: <AboutPage />,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage />,
+        },
+        {
           path: "/register",
           element: <Register />,
         },
@@ -48,7 +58,7 @@ function App() {
         {
           path: "/profile",
           element: <ProfilePage />,
-          loader: profilePageLoader
+          loader: profilePageLoader,
         },
         {
           path: "/profile/update",
