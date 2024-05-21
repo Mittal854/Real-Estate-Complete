@@ -5,8 +5,7 @@
 }
 
 .pic2{
-    width: 80%;
-    margin-left: 120px;
+    width: 95%;
 }
 
 .aheading{
@@ -22,7 +21,10 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 27px;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
  .p{
     font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 14px;
  }
